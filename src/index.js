@@ -3,12 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import ListingsContainer from "./ListingsContainer";
+
 
 ReactDOM.render(
     <React.StrictMode>
         <App />
-        <ListingsContainer />
     </React.StrictMode>,
     document.getElementById("root",),
 );
