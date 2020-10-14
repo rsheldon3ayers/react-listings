@@ -36,7 +36,7 @@
   flex-flow: column;
   justify-content: center;
   margin: 0 auto;
-  width: 75%;
+  width: 85%;
   height: auto;
   padding: 20px 0;
 }
@@ -44,9 +44,10 @@
   display: inline-block;
   flex-basis: 100%;
   position: relative;
-  min-height: 200px;
-  height: 200px;
+  min-height: 256px;
+  height: 256px;
   width: 100%;
   background-color: white;
   margin-top: 10px; 
+  border-radius: 4%;
 }
