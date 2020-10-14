@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./images/bg-header-mobile.svg";
+import data from "./data.json";
 import "./App.css";
 import ListingsContainer from "./ListingsContainer";
 
@@ -9,7 +10,7 @@ function App() {
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
             </header>
-            <ListingsContainer />
+            <ListingsContainer data={data}/>
         </div>
     );
 }

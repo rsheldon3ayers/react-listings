@@ -1,15 +1,15 @@
 import React from "react";
 
-const ListingBox = () => {
+const ListingBox = (props,) => {
     return (
         <div className="listing-box">
-             <img src={} />
-             company
-             tags
-             job title
-             age position type location
-             <hr />
-             skill tags
+            <p>{props.companyName}</p>
+            {/* //  company
+            //  tags
+            //  job title
+            //  age position type location
+            //  <hr />
+            //  skill tags */}
         </div>
     );
 };
