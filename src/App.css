@@ -51,3 +51,41 @@
   margin-top: 10px; 
   border-radius: 4%;
 }
+
+.listing-info {
+  padding: 0 20px;
+  width: 100%;
+}
+.top {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #81AAA7;
+  font-weight: bold;
+  font-size: 14px;
+}
+.company-name {
+  color: #81AAA7;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  margin-right: 10px;
+  left: 0;
+}
+.top-tags {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+}
+li {
+  float: left;
+  padding: 0 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 25px;
+  color: white;
+  background-color: gray;
+  border-radius: 25px;
+
+}

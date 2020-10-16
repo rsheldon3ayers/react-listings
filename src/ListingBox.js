@@ -4,7 +4,14 @@ const ListingBox = (props,) => {
     return (
         <div className="listing-box">
             <div className="listing-info">
-                <p className="company-name top-tags">{props.companyName}</p>
+                <div className="top">
+                    <p className="company-name">{props.companyName}</p>
+                    <ul className="top-tags">
+                        <li>New</li>
+                        <li>Featured</li>
+                    </ul>
+                </div>
+                
                 <p className="role-title"></p>
                 <ul className="age-contract-location"></ul>
                 <hr />
