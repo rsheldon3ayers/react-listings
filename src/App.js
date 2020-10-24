@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./images/bg-header-mobile.svg";
 import "./App.css";
+import data from "./data";
 import ListingsContainer from "./ListingsContainer";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
             </header>
-            <ListingsContainer />
+            <ListingsContainer jobs={data}/>
         </div>
     );
 }
