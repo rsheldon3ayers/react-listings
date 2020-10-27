@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./images/bg-header-mobile.svg";
-import "./App.css";
+import "./App.scss";
 import data from "./data";
 import ListingsContainer from "./ListingsContainer";
 
