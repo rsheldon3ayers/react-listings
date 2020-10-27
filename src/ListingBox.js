@@ -3,7 +3,7 @@ import AgeContractLocation from "./AgeContractLocation.js";
 
 
 const ListingBox = (props,) => {
-    const logoPath = "./images"
+    const logoPath = "./images";
     const logo = props.data.logo;
     let topTag;
     if(props.data.new && props.data.featured) {
@@ -26,9 +26,14 @@ const ListingBox = (props,) => {
         <div className="listing-box">
             <div className="listing-info">
                 <div className="top">
-                    <img src={require(`${logoPath}/${logo}`,)} className="company-logo" alt={props.data.company + " Logo"}/>
-                    <p className="company-name">{props.companyName}</p>
-                    {topTag}
+                    <div className="logo-container">
+                        <img src={require(`${logoPath}/${logo}`,)} className="company-logo" alt={props.data.company + " Logo"}/>
+                    </div>
+                    <div className="job-header">
+                        <h2 className="company-name">{props.companyName}</h2>
+                        {topTag}
+                    </div>
+                   
                     
                 </div>
                 
