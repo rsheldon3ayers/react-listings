@@ -7,38 +7,38 @@ const ListingBox = (props,) => {
     const logo = props.data.logo;
     let topTag;
     if(props.data.new && props.data.featured) {
-        topTag = <ul className="top-tags" >
-            <li className="new">New</li>
-            <li className="features">Featured</li>
-        </ul>;
+        topTag = 
+        <>
+            <span className="new">New!</span>
+            <span className="features">Featured</span>
+        </>;
     }
     else if(props.data.new && !props.data.featured ) {
-        topTag = <ul className="top-tags" >
-            <li className="new">New</li>
-        </ul>;
+        topTag = <>
+            <span className="new">New!</span>
+        </>;
     }
     else if(!props.data.new && props.data.featured ) {
-        topTag = <ul className="top-tags" >
-            <li className="featured">Featured</li>
-        </ul>;
+        topTag = <>
+            <span className="featured">Featured</span>
+        </>;
     }
     return (
         <div className="listing-box">
-            <div className="listing-info">
-                <div className="top">
-                    <div className="logo-container">
-                        <img src={require(`${logoPath}/${logo}`,)} className="company-logo" alt={props.data.company + " Logo"}/>
-                    </div>
-                    <div className="job-header">
-                        <h2 className="company-name">{props.companyName}</h2>
-                        {topTag}
-                    </div>
+            
+            <div className="top">
+                <div className="logo-container">
+                    <img src={require(`${logoPath}/${logo}`,)} className="company-logo" alt={props.data.company + " Logo"}/>
+                </div>
+                <div className="job-header">
+                    <h2 className="company-name">{props.companyName}</h2>
+                    {topTag}
+                </div>
                    
                     
-                </div>
-                
-                <p className="role-title">{props.data.position}</p>
-                <AgeContractLocation list={[props.data.postedAt, props.data.contract, props.data.location,]}/>
+            </div>
+            <div className="job-middle"><p className="role-title">{props.data.position}</p>
+                <div className="age-contract-location"><AgeContractLocation list={[props.data.postedAt, props.data.contract, props.data.location,]}/></div>
                 <hr />
                 <ul className="bottom-tags">
                     <AgeContractLocation list={[props.data.role, props.data.level,]}/>
@@ -48,6 +48,8 @@ const ListingBox = (props,) => {
                 </ul>
             </div>
         </div>
+
+    
     );
 };
 

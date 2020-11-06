@@ -4,11 +4,11 @@ const AgeContractLocation = (props,) => {
     
     console.log(props.list,);
     return (
-        <ul className="age-contract-location">
+        <>
             {props.list.map((item,) => 
-                item ? <li>{item}</li> : null,
+                item ? <p className="details">{item}</p> : null,
             )}
-        </ul>
+        </>
         
     );
 };
