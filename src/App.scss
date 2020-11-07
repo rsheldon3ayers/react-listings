@@ -38,6 +38,7 @@
   width: 85%;
   height: auto;
   padding: 20px 0;
+  margin-bottom: 350px;
 
   .job-middle {
     box-sizing: border-box;
@@ -60,6 +61,23 @@
           content: "•";
           padding-left: 4px;
         }
+      }
+    }
+    .bottom-tags {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .details {
+
+        display: inline-block;
+        color: #81aaa7;
+        padding: 7px;
+        background-color: lighten(lightgray, 10%);
+        margin-right: 10px;
+        font-size: 4vw;
+        font-weight: bolder;
+        border-radius: 6px;
+        flex-basis: 19%;
       }
     }
   }

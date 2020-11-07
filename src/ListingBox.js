@@ -14,12 +14,14 @@ const ListingBox = (props,) => {
         </>;
     }
     else if(props.data.new && !props.data.featured ) {
-        topTag = <>
+        topTag = 
+        <>
             <span className="new">New!</span>
         </>;
     }
     else if(!props.data.new && props.data.featured ) {
-        topTag = <>
+        topTag = 
+        <>
             <span className="featured">Featured</span>
         </>;
     }
@@ -40,12 +42,15 @@ const ListingBox = (props,) => {
             <div className="job-middle"><p className="role-title">{props.data.position}</p>
                 <div className="age-contract-location"><AgeContractLocation list={[props.data.postedAt, props.data.contract, props.data.location,]}/></div>
                 <hr />
-                <ul className="bottom-tags">
+                <div className="bottom-tags">
                     <AgeContractLocation list={[props.data.role, props.data.level,]}/>
                     {props.data.languages.map((tag,) =>
-                        <li>{tag}</li>,
+                        <p className="details">{tag}</p>,
                     )}
-                </ul>
+                    {props.data.tools.map((tag,) =>
+                        <p className="details">{tag}</p>,
+                    )}
+                </div>
             </div>
         </div>
 
